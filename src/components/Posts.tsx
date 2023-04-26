@@ -27,22 +27,27 @@ export function Posts() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-y-px gap-x-px">
+      <div className="grid grid-cols-3 place-items-center gap-y-px gap-x-px">
         {posts.map((post) => {
           return (
-            <div
-              key={crypto.randomUUID()}
-              className="h-32 w-auto flex items-center justify-center"
-            >
-              <img src={post} className="h-full aspect-video" />
+            <div className="aspect-h-1 aspect-w-1 h-full w-full overflow-hidden flex items-center justify-center">
+              <div className="flex items-center justify-center">
+                <img
+                  key={crypto.randomUUID()}
+                  src={post}
+                  className="aspect-auto"
+                />
+              </div>
             </div>
           )
         })}
         <label
           htmlFor="AddPost"
-          className="h-32 flex items-center justify-center bg-zinc-700 cursor-pointer"
+          className="aspect-h-1 aspect-w-1 h-full w-full flex items-center justify-center bg-zinc-950 cursor-pointer"
         >
-          <CameraPlus size={32} weight="fill" />
+          <div className="flex items-center justify-center">
+            <CameraPlus size={32} weight="fill" />
+          </div>
         </label>
         <input
           id="AddPost"

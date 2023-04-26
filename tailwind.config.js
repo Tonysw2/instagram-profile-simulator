@@ -12,5 +12,12 @@ export default {
       roboto: ['Roboto', 'sans-serif'],
     },
   },
-  plugins: [],
+
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
