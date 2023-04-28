@@ -1,10 +1,14 @@
-import { Bell, CaretLeft, DotsThree } from "@phosphor-icons/react";
-import { GoVerified } from "react-icons/go";
+import { Bell, CaretLeft, DotsThree } from '@phosphor-icons/react'
+import { GoVerified } from 'react-icons/go'
 
 export function Header() {
   return (
-    <header className="py-2 px-3 grid grid-cols-3">
-      <CaretLeft size={24} weight="bold" className="justify-self-start" />
+    <header className="py-2 px-3 grid grid-cols-[auto_auto_auto]">
+      <CaretLeft
+        size={24}
+        weight="bold"
+        className="self-center justify-self-start"
+      />
 
       <div className="flex items-center gap-1 justify-self-center">
         <p contentEditable className="font-bold">
@@ -18,5 +22,5 @@ export function Header() {
         <DotsThree size={24} />
       </div>
     </header>
-  );
+  )
 }

@@ -17,13 +17,10 @@ export function UsernameInfo() {
           sapiente odio doloribus beatae assumenda
         </p>
 
-        <a
-          href=""
-          className="flex items-center gap-2 font-bold text-sm text-blue-300"
-        >
+        <p className="flex items-center gap-2 font-bold text-sm text-blue-300">
           <Link size={16} weight="bold" />
           <span contentEditable>Some link here</span>
-        </a>
+        </p>
       </div>
 
       <div className="flex flex-col gap-2">
